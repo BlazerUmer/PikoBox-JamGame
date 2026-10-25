@@ -5,11 +5,12 @@
 
 A small 2D pixel-art platformer made with **Godot 4**, built around one idea: you are a little guy, and your size changes what you can do.
 
-**Play it:** \[add your itch.io link here]
+**Play it:** (https://mrblxze.itch.io/piko-box)
 
-!\[Screenshot](screenshots/screenshot.png)
+<img width="1917" height="1075" alt="Screenshot 2026-10-26 013626" src="https://github.com/user-attachments/assets/9ef7590d-c5b6-420e-bf93-ec8240ea1bce" />
 
-<!-- Add a screenshot at screenshots/screenshot.png, or delete this line. -->
+
+
 
 ## About
 
@@ -79,7 +80,8 @@ fonts/       Pixelify Sans
 
 ## AI disclosure
 
-All art, levels and game design are my own. The game code was written with help from Claude (an AI assistant).
+All art, levels and game design are my own. Less than 20 percent of the game code was written with help from Claude (an AI assistant).
+Help was taken for the player movement script logic.
 
-## 
+
 
