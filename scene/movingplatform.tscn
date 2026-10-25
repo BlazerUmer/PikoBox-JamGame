@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dyxf7gpqfnv6m"]
+
+[ext_resource type="Texture2D" uid="uid://cqsjq0qeww06f" path="res://jame gam/moving platfrom.png" id="1_r2vax"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sdhfp"]
+size = Vector2(45.093746, 17.185987)
+
+[node name="MovingPlatform" type="AnimatableBody2D" unique_id=1368633170]
+position = Vector2(400, 200)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=541066020]
+position = Vector2(14, 13.5)
+scale = Vector2(1.875, 1.84375)
+texture = ExtResource("1_r2vax")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=220580808]
+position = Vector2(16.453125, 18.64118)
+scale = Vector2(1, 0.97274804)
+shape = SubResource("RectangleShape2D_sdhfp")

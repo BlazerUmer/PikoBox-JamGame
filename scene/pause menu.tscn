@@ -1,0 +1,155 @@
+[gd_scene format=3 uid="uid://yfn2b25bmkdo"]
+
+[ext_resource type="Script" uid="uid://knaw2vxk83xl" path="res://scripts/pause_menu.gd" id="1_7l61g"]
+[ext_resource type="FontFile" uid="uid://dpnd0lrla7q1w" path="res://PixelifySans-Regular.ttf" id="2_1htdk"]
+[ext_resource type="FontFile" uid="uid://bciephe0so61g" path="res://fonts/Pixelify_Sans/static/PixelifySans-Bold.ttf" id="2_5jxrj"]
+[ext_resource type="FontFile" uid="uid://r26svt2adh5l" path="res://fonts/Pixelify_Sans/static/PixelifySans-Regular.ttf" id="3_fxs3t"]
+[ext_resource type="Script" uid="uid://b5br0u1qnm5ex" path="res://scene/try_again_button_3.gd" id="4_4iwa0"]
+[ext_resource type="Script" uid="uid://dmw4vx1jf0pu5" path="res://scripts/start_button.gd" id="4_ioks8"]
+[ext_resource type="Texture2D" uid="uid://7ycl8bm3qt68" path="res://jame gam/tutorial.png" id="5_pyspx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cpo37"]
+bg_color = Color(0.7781049, 0.5257843, 0.49079627, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lsslp"]
+bg_color = Color(0.24052352, 0.07385314, 0.09381833, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jkb16"]
+bg_color = Color(0.5624707, 0.25677815, 0.30489513, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1htdk"]
+bg_color = Color(0.7781049, 0.5257843, 0.49079627, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ai0cd"]
+bg_color = Color(0.24052352, 0.07385314, 0.09381833, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c4nxl"]
+bg_color = Color(0.5624707, 0.25677815, 0.30489513, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="pause menu" type="CanvasLayer" unique_id=1263179102]
+process_mode = 3
+layer = 10
+script = ExtResource("1_7l61g")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1365801989]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1764706, 0.15294118, 0.1882353, 0.5882353)
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=924052768]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 69.0
+offset_right = 221.0
+offset_bottom = 126.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_1htdk")
+theme_override_font_sizes/font_size = 5
+text = "Be Careful! Boxes will only 
+spawn when  player is in default size 
+aka 2 and will not spawn if something
+ is blocking the players path."
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=315021705]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=808388963]
+layout_mode = 2
+
+[node name="paused" type="Label" parent="CenterContainer/VBoxContainer" unique_id=227037224]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_5jxrj")
+theme_override_font_sizes/font_size = 33
+text = "Paused"
+horizontal_alignment = 1
+
+[node name="resume button" type="Button" parent="CenterContainer/VBoxContainer" unique_id=759473980]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.6133377, 0.32413095, 0.34738785, 1)
+theme_override_colors/font_hover_color = Color(0.61592436, 0.404461, 0.44026193, 1)
+theme_override_fonts/font = ExtResource("3_fxs3t")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_cpo37")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lsslp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jkb16")
+action_mode = 0
+text = "Resume"
+
+[node name="Try Again button3" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1782657199]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.6133377, 0.32413095, 0.34738785, 1)
+theme_override_colors/font_hover_color = Color(0.61592436, 0.404461, 0.44026193, 1)
+theme_override_fonts/font = ExtResource("3_fxs3t")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_1htdk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ai0cd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_c4nxl")
+action_mode = 0
+text = "Try Again"
+script = ExtResource("4_4iwa0")
+
+[node name="level select button2" type="Button" parent="CenterContainer/VBoxContainer" unique_id=296672983]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.6133377, 0.32413095, 0.34738785, 1)
+theme_override_colors/font_hover_color = Color(0.61592436, 0.404461, 0.44026193, 1)
+theme_override_fonts/font = ExtResource("3_fxs3t")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_cpo37")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lsslp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jkb16")
+action_mode = 0
+text = "Level Selection"
+
+[node name="main menu button3" type="Button" parent="CenterContainer/VBoxContainer" unique_id=501769198]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.6133377, 0.32413095, 0.34738785, 1)
+theme_override_colors/font_hover_color = Color(0.61592436, 0.404461, 0.44026193, 1)
+theme_override_fonts/font = ExtResource("3_fxs3t")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_cpo37")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lsslp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jkb16")
+action_mode = 0
+text = "Main Menu"
+script = ExtResource("4_ioks8")
+
+[node name="tutorial" type="TextureRect" parent="." unique_id=516932215]
+offset_left = -19.0
+offset_top = -96.0
+offset_right = 92.0
+offset_bottom = 165.0
+texture = ExtResource("5_pyspx")
+expand_mode = 1
+stretch_mode = 5

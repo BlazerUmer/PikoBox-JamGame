@@ -1,0 +1,32 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Godot 3 leftovers (harmless if unused)
+.import/
+.mono/
+data_*/
+mono_crash.*.json
+
+# Export output (builds are uploaded to itch.io / GitHub Releases, not committed)
+build/
+builds/
+export/
+*.pck
+*.exe
+*.apk
+*.aab
+*.dmg
+*.app
+*.x86_64
+*.zip
+
+# Editor, OS and temp files
+.vscode/
+.idea/
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

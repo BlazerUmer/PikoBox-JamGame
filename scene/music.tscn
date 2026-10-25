@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://nwkaasadq7o5"]
+
+[ext_resource type="AudioStream" uid="uid://cxkpr384vie0b" path="res://scene/leberch-chill-603151.mp3" id="1_y257y"]
+
+[node name="Music" type="Node2D" unique_id=1431922740]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1713369593]
+stream = ExtResource("1_y257y")
+autoplay = true

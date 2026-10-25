@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dmockjn1nmcl1"]
+
+[ext_resource type="Script" uid="uid://cxnpctsp73kx5" path="res://scripts/box.gd" id="1_3tsfx"]
+[ext_resource type="Texture2D" uid="uid://b7kpbo04ie52s" path="res://jame gam/box.png" id="2_5jxcw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ql73s"]
+size = Vector2(34.75, 30.875)
+
+[node name="box" type="RigidBody2D" unique_id=1942206849]
+script = ExtResource("1_3tsfx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1471057582]
+position = Vector2(145.5, 275)
+scale = Vector2(2.1875, 2.0000007)
+texture = ExtResource("2_5jxcw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1817924352]
+position = Vector2(145.625, 274.5625)
+shape = SubResource("RectangleShape2D_ql73s")
