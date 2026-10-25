@@ -1,7 +1,7 @@
 # PikoBox
 
-> ## 🎮 Inspired by \\\\\\\*\\\\\\\*Pico Park\\\\\\\*\\\\\\\*
-> \\\\\\\*\\\\\\\*PikoBox is inspired by \\\\\\\*Pico Park\\\\\\\* by TECOPARK.\\\\\\\*\\\\\\\* The idea of pushing, stacking and climbing blocks to get a tiny character through small, tight puzzle levels comes straight from that game. This is an unofficial fan project, made for a game jam. It is not affiliated with or endorsed by TECOPARK, and it uses none of Pico Park's assets.
+> ## 🎮 Inspired by \*Pico Park*\
+> PikoBox is inspired by Pico Park by TECOPARK.The idea of pushing, stacking and climbing blocks to get a tiny character through small, tight puzzle levels comes straight from that game. This is an unofficial fan project, made for a game jam. It is not affiliated with or endorsed by TECOPARK, and it uses none of Pico Park's assets.
 
 A small 2D pixel-art platformer made with **Godot 4**, built around one idea: you are a little guy, and your size changes what you can do.
 
@@ -56,7 +56,7 @@ If you like this, go play the real thing: **Pico Park** by TECOPARK.
 2. Clone this repository:
 
 ```
-   git clone https://github.com/Blazerumer/\\\\\\\[repository-name].git
+   git clone https://github.com/Blazerumer/PikoBox-JamGame.git
    ```
 
 3. Open Godot, click **Import**, and select the `project.godot` file.
