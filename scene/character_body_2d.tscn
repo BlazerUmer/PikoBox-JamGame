@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dv50ue4of773j"]
+
+[ext_resource type="Script" uid="uid://b00g0a45k1hx2" path="res://scripts/script.gd" id="1_qug0s"]
+[ext_resource type="Texture2D" uid="uid://dq7edbhj02s1u" path="res://jame gam/main charac.png" id="2_qug0s"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v0s4m"]
+radius = 4.0
+height = 8.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1169679479]
+position = Vector2(0, -3)
+script = ExtResource("1_qug0s")
+
+[node name="MainCharac" type="Sprite2D" parent="." unique_id=918076244]
+position = Vector2(10, -5)
+texture = ExtResource("2_qug0s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=707354322]
+position = Vector2(10, -5)
+shape = SubResource("CapsuleShape2D_v0s4m")
