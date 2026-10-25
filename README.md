@@ -79,9 +79,10 @@ fonts/       Pixelify Sans
 
 ## AI disclosure
 
-All art, levels and game design are my own. The game code was written with help from Claude (an AI assistant).
+All art, levels and game design are my own. Less than 20 percent of the game code was written with help from Claude (an AI assistant).
+Help was taken for the player movement script logic.
 
-## License
+
 
 \[Choose a license, for example MIT, and add a LICENSE file. Remove this section if you'd rather not.]
 
