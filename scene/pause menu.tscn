@@ -6,7 +6,6 @@
 [ext_resource type="FontFile" uid="uid://r26svt2adh5l" path="res://fonts/Pixelify_Sans/static/PixelifySans-Regular.ttf" id="3_fxs3t"]
 [ext_resource type="Script" uid="uid://b5br0u1qnm5ex" path="res://scene/try_again_button_3.gd" id="4_4iwa0"]
 [ext_resource type="Script" uid="uid://dmw4vx1jf0pu5" path="res://scripts/start_button.gd" id="4_ioks8"]
-[ext_resource type="Texture2D" uid="uid://7ycl8bm3qt68" path="res://jame gam/tutorial.png" id="5_pyspx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cpo37"]
 bg_color = Color(0.7781049, 0.5257843, 0.49079627, 1)
@@ -65,10 +64,10 @@ color = Color(0.1764706, 0.15294118, 0.1882353, 0.5882353)
 
 [node name="Label" type="Label" parent="ColorRect" unique_id=924052768]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 69.0
-offset_right = 221.0
-offset_bottom = 126.0
+offset_left = 2.0
+offset_top = 5.0
+offset_right = 218.0
+offset_bottom = 62.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_1htdk")
 theme_override_font_sizes/font_size = 5
@@ -144,12 +143,3 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_jkb16")
 action_mode = 0
 text = "Main Menu"
 script = ExtResource("4_ioks8")
-
-[node name="tutorial" type="TextureRect" parent="." unique_id=516932215]
-offset_left = -19.0
-offset_top = -96.0
-offset_right = 92.0
-offset_bottom = 165.0
-texture = ExtResource("5_pyspx")
-expand_mode = 1
-stretch_mode = 5
