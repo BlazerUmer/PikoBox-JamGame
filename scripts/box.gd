@@ -1,22 +1,11 @@
 extends PhysicsBody2D
-# Attach this to the root node of your box scene (the root is named "box").
-# Made for a RigidBody2D root (pushable + stackable), but also works with
-# StaticBody2D or CharacterBody2D.
-#
-# Expected children:
-#   CollisionShape2D   (required)
-#   Sprite2D           (optional - stretched to fit the box)
-#
-# The player sets box_size_px (16 / 32 / 48 / 60) just before the box enters the level.
-# The box sizes its own hitbox and picture, so the root node is never scaled
-# (scaling a physics body is unreliable).
 
 @export var box_size_px: int = 16
 
 
 func _ready() -> void:
 	add_to_group("boxes")
-	scale = Vector2.ONE                          # never scale the body itself
+	scale = Vector2.ONE                          #never scale the body itself
 
 	var size := float(box_size_px)
 
@@ -26,7 +15,7 @@ func _ready() -> void:
 		rect.size = Vector2(size, size)
 		shape_node.shape = rect
 		shape_node.scale = Vector2.ONE
-		shape_node.position = Vector2.ZERO       # hitbox centered on the box's origin
+		shape_node.position = Vector2.ZERO       #hitbox centered on the box's origin
 	else:
 		push_warning("box needs a child node named CollisionShape2D")
 
